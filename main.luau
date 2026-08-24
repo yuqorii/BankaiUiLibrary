@@ -618,14 +618,14 @@ function Library:CreateWindow(config)
 		btnLayout.SortOrder = Enum.SortOrder.LayoutOrder
 		btnLayout.Padding = UDim.new(0, 4)
 
-		local actions = {"Teleport", "Spectate", "Select as Target", "Highlight"}
+		local actions = {"Teleport", "Spectate", "Highlight"}
 		for i, action in ipairs(actions) do
 			local actionBtn = Instance.new("TextButton")
 			actionBtn.Parent = ButtonContainer
 			actionBtn.BackgroundColor3 = Theme.Element
 			actionBtn.BorderColor3 = Theme.Border
 			actionBtn.BorderSizePixel = 1
-			actionBtn.Size = UDim2.new(0.25, -3, 1, 0)
+			actionBtn.Size = UDim2.new(0.333, -3, 1, 0)
 			actionBtn.Font = Theme.Font
 			actionBtn.Text = action
 			actionBtn.TextColor3 = Theme.Text
