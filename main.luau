@@ -542,15 +542,6 @@ function Library:CreateWindow(config)
 		AvatarImage.Size = UDim2.new(0, 70, 0, 70)
 		AvatarImage.Image = ""
 
-		local HealthHearts = Instance.new("TextLabel")
-		HealthHearts.Parent = DetailsContainer
-		HealthHearts.BackgroundTransparency = 1
-		HealthHearts.Position = UDim2.new(0, 0, 0, 75)
-		HealthHearts.Size = UDim2.new(0, 70, 0, 15)
-		HealthHearts.Font = Enum.Font.Gotham
-		HealthHearts.Text = "❤❤❤❤❤"
-		HealthHearts.TextColor3 = Color3.fromRGB(200, 50, 50)
-		HealthHearts.TextSize = 10
 
 		local StatsLabel = Instance.new("TextLabel")
 		StatsLabel.Parent = DetailsContainer
@@ -564,46 +555,6 @@ function Library:CreateWindow(config)
 		StatsLabel.TextXAlignment = Enum.TextXAlignment.Left
 		StatsLabel.TextYAlignment = Enum.TextYAlignment.Top
 		
-		-- Status Dropdown mock
-		local StatusLabel = Instance.new("TextLabel")
-		StatusLabel.Parent = DetailsContainer
-		StatusLabel.BackgroundTransparency = 1
-		StatusLabel.Position = UDim2.new(1, -120, 0, 10)
-		StatusLabel.Size = UDim2.new(0, 120, 0, 15)
-		StatusLabel.Font = Theme.Font
-		StatusLabel.Text = "Status"
-		StatusLabel.TextColor3 = Theme.Text
-		StatusLabel.TextSize = Theme.TextSize
-		StatusLabel.TextXAlignment = Enum.TextXAlignment.Left
-
-		local StatusBox = Instance.new("Frame")
-		StatusBox.Parent = DetailsContainer
-		StatusBox.BackgroundColor3 = Theme.Element
-		StatusBox.BorderColor3 = Theme.Border
-		StatusBox.BorderSizePixel = 1
-		StatusBox.Position = UDim2.new(1, -120, 0, 25)
-		StatusBox.Size = UDim2.new(0, 120, 0, 25)
-
-		local StatusText = Instance.new("TextLabel")
-		StatusText.Parent = StatusBox
-		StatusText.BackgroundTransparency = 1
-		StatusText.Position = UDim2.new(0, 5, 0, 0)
-		StatusText.Size = UDim2.new(1, -25, 1, 0)
-		StatusText.Font = Theme.Font
-		StatusText.Text = "Neutral"
-		StatusText.TextColor3 = Theme.Text
-		StatusText.TextSize = Theme.TextSize
-		StatusText.TextXAlignment = Enum.TextXAlignment.Left
-		
-		local StatusIcon = Instance.new("TextLabel")
-		StatusIcon.Parent = StatusBox
-		StatusIcon.BackgroundTransparency = 1
-		StatusIcon.Position = UDim2.new(1, -20, 0, 0)
-		StatusIcon.Size = UDim2.new(0, 20, 1, 0)
-		StatusIcon.Font = Theme.Font
-		StatusIcon.Text = "▼"
-		StatusIcon.TextColor3 = Theme.SubText
-		StatusIcon.TextSize = 10
 
 		-- 4 Action Buttons
 		local ButtonContainer = Instance.new("Frame")
