@@ -562,7 +562,7 @@ function Library:CreateWindow(config)
 		StatsLabel.TextColor3 = Theme.Text
 		StatsLabel.TextSize = Theme.TextSize
 		StatsLabel.TextXAlignment = Enum.TextXAlignment.Left
-		StatsLabel.TextYAlignment = Enum.TextXAlignment.Top
+		StatsLabel.TextYAlignment = Enum.TextYAlignment.Top
 		
 		-- Status Dropdown mock
 		local StatusLabel = Instance.new("TextLabel")
